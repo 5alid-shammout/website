@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+* {
+  margin: 0;
+  font-size: 4vw;
+  font-family: 'Permanent Marker', cursive;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #1f2938;
+  color: #228CDB;
+}
+
+body p {
+  margin-left: 2.5vw;
+  width: 35vw;
+  text-align: left;
+}
+
+body p span {
+  -webkit-animation: changecolor 1s linear infinite;
+          animation: changecolor 1s linear infinite;
+  font-size: 15vw;
+  line-height: 0.6;
+}
+
+body .card {
+  margin: 2.5vw 2.5vw 2.5vw 2.5vw;
+  border-radius: 2vw;
+  background: #15171a;
+  width: 25vw;
+  height: 25vw;
+}
+
+body .card img {
+  width: 25vw;
+  height: 25vw;
+}
+
+@-webkit-keyframes changecolor {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes changecolor {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body p {
+    width: 90vw;
+  }
+  body .card {
+    border-radius: 3vw;
+    width: 50vw;
+    height: 50vw;
+  }
+  body img {
+    width: 50vw !important;
+    height: 50vw !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
