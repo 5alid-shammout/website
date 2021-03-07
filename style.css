@@ -70,6 +70,10 @@ body .card img {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
   p {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
