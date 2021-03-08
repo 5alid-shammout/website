@@ -11,8 +11,8 @@ $dark2: #1f2938;
 }
 body {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   justify-content: space-between;
   background: $dark2;
   color: $maincolor;
@@ -50,7 +50,8 @@ body {
 
 @media screen and (max-width: 600px) {
   body {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
   }
   p {
     grid-column: 1/3;
